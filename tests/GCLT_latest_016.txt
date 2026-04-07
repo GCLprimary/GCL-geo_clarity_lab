@@ -1,0 +1,294 @@
+GeometricClarityLab — Fold Line + Symbol Grouping + Semantic Diagnostic
+==========================================================================================
+Clarity Ratio    : {'current_ratio': 0.0, 'history_length': 0}
+Invariants       : {'pi': 3.141592653589793, 'asymmetric_delta': 0.01639510239, 'golden_ratio': 1.618034, 'dual_13_range': 'A=+1..M=+13, N=-1..Z=-13, 0=dynamic'}
+Safeguards       : {'reversal_count': 0, 'max_local_clarity': 0.0}
+Radial Web       : {'total_displacers': 0, 'next_id': 0, 'global_clarity': 0.0, 'last_tick_age': 0.04, 'mode': '27-symbol_lattice'}
+Bipolar Lattice  : {'total_waypoints': 53, 'active_strings': 52, 'core_id': None, 'core_score': 0.0, 'global_clarity': 0.0, 'golden_zone_tension': 0.0, 'ring_net_phase': 2.800048, 'ring_spin_signal': 0.0, 'geo_tick_count': 0, 'field_stress': 0.5, 'fold_negotiation_signal': 0.202, 'transport_total': 0.0, 'zero_braking': True, 'mode': 'bipolar_18_8_27_52_spin_d13'}
+Ouroboros Engine : {'truth_library_size': 64, 'generative_threshold': 0.38, 'feedback_fraction': 0.08, 'prune_threshold': 0.010636, 'deviation': 1.063593, 'frame_delta': 0.0163951023932}
+Fold Line        : {'spin_phase': 0.0, 'spin_sign': 1, 'total_fold_events': 0, 'imprinted_points': 0, 'coherence_signal': 0.0, 'resolution_score': 0.15, 'active_fold_zone': {'centroid_phase': 0.0, 'spread': 6.283185307179586, 'strength': 0.0}, 'fold_tolerance': 0.01639510239}
+Symbol Grouping  : {'total_groups': 27, 'imprinted_groups': 0, 'symbols_mapped': 27, 'coherence': 0.0, 'last_imprint_sum': 0.0, 'collisions': []}
+
+Options:
+ 1 - Box Scaling Test
+ 2 - Full Pipeline Test (default prompt)
+ 3 - Full Pipeline Test with custom prompt
+ 4 - Inspect symbol groups
+ 5 - Semantic Diagnostic (basis matrix + excitation sequence)
+ 6 - Targeted Diagnostic (excite unimprinted singletons)
+ 7 - Language Processing (fingerprint + generation)
+ q - Quit
+
+Choose [1/2/3/4/5/6/7/q]: 7
+
+[7] Language Processing — Geometric Fingerprint + Generation
+
+  [warm-up] Seeding fold line for language session...
+  [warm-up] Done — imprinted pts: 10 | active groups: 0
+
+  Enter sentences to process. Type 'vocab' to see session
+  vocabulary, 'carry' to inspect relational tension window,
+  'status' for processor state, 'back' to return.
+
+  > Gorillas love to eat bananas and have big muscles. What do gorillas love to eat?
+
+  ── Fingerprint ──────────────────────────────────────
+  Direction    : positive
+  Mean tension : +0.0032
+  Net tension  : +0.1723
+  Field stress : 0.0169
+  Boundaries   : 22  (words: 15)
+  Peak pair    : I→Q  (+0.0554)
+  Top groups   : grp1×19  grp9×12  grp17×11  grp6×7  grp11×6
+
+  ── Per-word ─────────────────────────────────────────
+  gorillas     | tension=+0.0000 | group= 9 | net=+2.385
+  love         | tension=+0.0000 | group=17 | net=-0.077
+  to           | tension=+0.0000 | group=17 | net=-0.154
+  eat          | tension=+0.0000 | group= 1 | net=+0.692
+  bananas      | tension=+0.0000 | group= 1 | net=+0.462
+  and          | tension=+0.0000 | group= 3 | net=+1.231
+  have         | tension=+0.0000 | group= 1 | net=+0.231
+  big          | tension=+0.0000 | group=11 | net=-0.154
+  muscles.     | tension=+0.0000 | group= 4 | net=+2.000
+  what         | tension=+0.0000 | group= 8 | net=+0.077
+  do           | tension=+0.0000 | group=17 | net=+0.615
+  gorillas     | tension=+0.0000 | group= 9 | net=+2.385
+  love         | tension=+0.0000 | group=17 | net=-0.077
+  to           | tension=+0.0000 | group=17 | net=-0.154
+  eat?         | tension=+0.0000 | group= 1 | net=+0.692
+
+  ── Vocabulary hits ──────────────────────────────────
+  'gorillas'  familiarity=1.000  appearances=2 [STABLE]
+  'love'  familiarity=1.000  appearances=2 [STABLE]
+  'to'  familiarity=1.000  appearances=2 [STABLE]
+
+  ── Answer (recognition) ──────────────────────────
+  Reconstruction pass. Structural load-bearers: gorillas(+2.38), gorillas(+2.38), muscles.(+2.00). Peak interaction: I→Q (+0.0554). Net field: positive (tension +0.1723).
+
+  ── Geometric Output (~ approximate) ──────────────
+  gorillas to muscles to structured? [geometric approximation — field polarity -0.006, resolution 0.150]
+  [polarity -0.006 | region boundary [-3.0,3.0] | candidates: gorillas, muscles, structured, their]
+
+  carry: +0.0264 | alignment: +0.0000 (neutral) | injected: +0.0264
+
+  consensus=+0.3386  persistence=1.0000  resolution=0.703  vocab=12 words  (3 stable, 55 named)  elapsed=0.042s
+
+  > Jack and Jill ran up the hill. What did Jack and Jill do?
+
+  ── Fingerprint ──────────────────────────────────────
+  Direction    : positive
+  Mean tension : +0.0036
+  Net tension  : +0.1231
+  Field stress : 0.0266
+  Boundaries   : 18  (words: 13)
+  Peak pair    : Z→A  (-0.0800)
+  Top groups   : grp1×10  grp9×9  grp11×8  grp3×5  grp12×5
+
+  ── Per-word ─────────────────────────────────────────
+  jack         | tension=+0.0000 | group= 1 | net=-0.154
+  and          | tension=+0.0000 | group= 3 | net=+1.231
+  jill         | tension=+0.0000 | group= 9 | net=+2.000
+  ran          | tension=+0.0000 | group= 1 | net=+0.846
+  up           | tension=+0.0000 | group=18 | net=-1.077
+  the          | tension=+0.0000 | group= 8 | net=+1.231
+  hill.        | tension=+0.0000 | group= 9 | net=+2.846
+  what         | tension=+0.0000 | group= 8 | net=+0.077
+  did          | tension=+0.0000 | group=11 | net=+2.692
+  jack         | tension=+0.0000 | group= 1 | net=-0.154
+  and          | tension=+0.0000 | group= 3 | net=+1.231
+  jill         | tension=+0.0000 | group= 9 | net=+2.000
+  do?          | tension=+0.0000 | group=17 | net=+0.615
+
+  ── Vocabulary hits ──────────────────────────────────
+  'and'  familiarity=1.000  appearances=2 [STABLE]
+  'what'  familiarity=1.000  appearances=2 [STABLE]
+  'jack'  familiarity=1.000  appearances=2 [STABLE]
+  'and'  familiarity=1.000  appearances=3 [STABLE]
+  'jill'  familiarity=1.000  appearances=2 [STABLE]
+
+  ── Answer (boundary) ──────────────────────────
+  Field forming. Insufficient persistence (0.32) for resolution in recognition mode.
+
+  ── Geometric Output (⟳ parity locked) ──────────────
+  hill did?
+  [polarity -0.000 | region boundary [-3.0,3.0] | candidates: hill, did, jill, structured]
+
+  carry: +0.2385 | alignment: +0.1055 (neutral) | injected: +0.2123
+
+  consensus=+0.1276  persistence=0.3197  resolution=0.502  vocab=20 words  (7 stable, 55 named)  elapsed=0.01s
+
+  > Symbols can be an efficient way to communicate data. What can symbols communicate?
+
+  ── Fingerprint ──────────────────────────────────────
+  Direction    : positive
+  Mean tension : +0.0037
+  Net tension  : +0.2093
+  Field stress : 0.0222
+  Boundaries   : 22  (words: 13)
+  Peak pair    : M→A  (+0.0800)
+  Top groups   : grp1×16  grp14×12  grp13×10  grp17×9  grp3×9
+
+  ── Per-word ─────────────────────────────────────────
+  symbols      | tension=+0.0000 | group= 4 | net=-0.462
+  can          | tension=+0.0000 | group= 1 | net=+1.308
+  be           | tension=+0.0000 | group=20 | net=-0.077
+  an           | tension=+0.0000 | group= 1 | net=+0.308
+  efficient    | tension=+0.0000 | group=11 | net=+3.692
+  way          | tension=+0.0000 | group= 1 | net=-1.538
+  to           | tension=+0.0000 | group=17 | net=-0.154
+  communicate  | tension=+0.0000 | group=14 | net=+2.615
+  data.        | tension=+0.0000 | group= 1 | net=+1.231
+  what         | tension=+0.0000 | group= 8 | net=+0.077
+  can          | tension=+0.0000 | group= 1 | net=+1.308
+  symbols      | tension=+0.0000 | group= 4 | net=-0.462
+  communicate? | tension=+0.0000 | group=14 | net=+2.615
+
+  ── Vocabulary hits ──────────────────────────────────
+  'to'  familiarity=1.000  appearances=3 [STABLE]
+  'what'  familiarity=1.000  appearances=3 [STABLE]
+  'can'  familiarity=1.000  appearances=2 [STABLE]
+  'symbols'  familiarity=1.000  appearances=2 [STABLE]
+
+  ── Answer (recognition) ──────────────────────────
+  Field at phase boundary (near zero, phase=6.221). Direction: positive. Transition state — resolution pending next spin cycle.
+
+  ── Geometric Output (⟳ parity locked) ──────────────
+  communicate to way and structured? [parity confirmed, alignment +1.000]
+  [polarity -0.006 | region boundary [-3.0,3.0] | candidates: communicate, way, structured, their]
+
+  carry: +0.2427 | alignment: +0.9539 (aligned) | injected: +0.0056
+
+  consensus=+0.3316  persistence=1.0000  resolution=0.867  vocab=29 words  (9 stable, 55 named)  elapsed=0.02s
+
+  > The brain processes information through billions of interconnected neurons. What does the brain process?
+
+  ── Fingerprint ──────────────────────────────────────
+  Direction    : positive
+  Mean tension : +0.0029
+  Net tension  : +0.2309
+  Field stress : 0.0163
+  Boundaries   : 22  (words: 14)
+  Peak pair    : O→Q  (+0.0677)
+  Top groups   : grp17×19  grp6×18  grp7×16  grp3×16  grp11×12
+
+  ── Per-word ─────────────────────────────────────────
+  the          | tension=+0.0000 | group= 8 | net=+1.231
+  brain        | tension=+0.0000 | group= 1 | net=+1.154
+  processes    | tension=+0.0000 | group= 4 | net=+2.692
+  information  | tension=+0.0000 | group=17 | net=+2.077
+  through      | tension=+0.0000 | group= 8 | net=+0.462
+  billions     | tension=+0.0000 | group= 9 | net=+2.769
+  of           | tension=+0.0000 | group=17 | net=-0.462
+  interconnected | tension=+0.0000 | group= 3 | net=+6.385
+  neurons.     | tension=+0.0000 | group= 3 | net=+0.769
+  what         | tension=+0.0000 | group= 8 | net=+0.077
+  does         | tension=+0.0000 | group=17 | net=+1.385
+  the          | tension=+0.0000 | group= 8 | net=+1.231
+  brain        | tension=+0.0000 | group= 1 | net=+1.154
+  process?     | tension=+0.0000 | group= 4 | net=+1.923
+
+  ── Vocabulary hits ──────────────────────────────────
+  'the'  familiarity=1.000  appearances=2 [STABLE]
+  'what'  familiarity=1.000  appearances=4 [STABLE]
+  'the'  familiarity=1.000  appearances=3 [STABLE]
+  'brain'  familiarity=1.000  appearances=2 [STABLE]
+
+  ── Answer (recognition) ──────────────────────────
+  Field resolved (affirmative). Direction: positive. Persistence 1.00, consensus +0.378. Known anchors: the, the.
+
+  ── Geometric Output (⟳ parity locked) ──────────────
+  billions to processes and information?
+  [polarity -0.006 | region boundary [-3.0,3.0] | candidates: billions, processes, information, process]
+
+  carry: +0.4412 | alignment: +0.9709 (aligned) | injected: +0.1998
+
+  consensus=+0.3776  persistence=1.0000  resolution=0.890  vocab=39 words  (11 stable, 55 named)  elapsed=0.019s
+
+  > Sharks live in the ocean and have sharp teeth. Where do sharks live?
+
+  ── Fingerprint ──────────────────────────────────────
+  Direction    : positive
+  Mean tension : +0.0077
+  Net tension  : +0.3847
+  Field stress : 0.0177
+  Boundaries   : 22  (words: 13)
+  Peak pair    : C→B  (+0.0677)
+  Top groups   : grp6×13  grp8×12  grp1×11  grp7×8  grp25×6
+
+  ── Per-word ─────────────────────────────────────────
+  sharks       | tension=+0.0000 | group= 1 | net=+0.846
+  live         | tension=+0.0000 | group=11 | net=+1.077
+  in           | tension=+0.0000 | group= 3 | net=+1.077
+  the          | tension=+0.0000 | group= 8 | net=+1.231
+  ocean        | tension=+0.0000 | group= 1 | net=+1.462
+  and          | tension=+0.0000 | group= 3 | net=+1.231
+  have         | tension=+0.0000 | group= 1 | net=+0.231
+  sharp        | tension=+0.0000 | group= 1 | net=+1.154
+  teeth.       | tension=+0.0000 | group= 6 | net=+1.846
+  where        | tension=+0.0000 | group= 6 | net=+1.308
+  do           | tension=+0.0000 | group=17 | net=+0.615
+  sharks       | tension=+0.0000 | group= 1 | net=+0.846
+  live?        | tension=+0.0000 | group=11 | net=+1.077
+
+  ── Vocabulary hits ──────────────────────────────────
+  'the'  familiarity=1.000  appearances=4 [STABLE]
+  'and'  familiarity=1.000  appearances=4 [STABLE]
+  'have'  familiarity=1.000  appearances=2 [STABLE]
+  'do'  familiarity=1.000  appearances=2 [STABLE]
+  'sharks'  familiarity=1.000  appearances=2 [STABLE]
+
+  ── Answer (recognition) ──────────────────────────
+  Field resolved (affirmative). Direction: positive. Persistence 1.00, consensus +0.373. Known anchors: the, and, have.
+
+  ── Geometric Output (⟳ parity locked) ──────────────
+  teeth to structured and their?
+  [polarity -0.006 | region boundary [-3.0,3.0] | candidates: teeth, structured, their, tested]
+
+  carry: +0.6593 | alignment: +1.0000 (aligned) | injected: +0.2206
+
+  consensus=+0.3728  persistence=1.0000  resolution=0.916  vocab=47 words  (14 stable, 55 named)  elapsed=0.021s
+
+  > Geometric structures organize matter into stable repeating patterns. What do geometric structures do?
+
+  ── Fingerprint ──────────────────────────────────────
+  Direction    : positive
+  Mean tension : +0.0062
+  Net tension  : +0.4492
+  Field stress : 0.0194
+  Boundaries   : 20  (words: 13)
+  Peak pair    : M→D  (+0.0800)
+  Top groups   : grp2×27  grp6×22  grp7×18  grp0×12  grp11×9
+
+  ── Per-word ─────────────────────────────────────────
+  geometric    | tension=+0.0000 | group= 6 | net=+2.615
+  structures   | tension=+0.0000 | group= 2 | net=+2.077
+  organize     | tension=+0.0064 | group= 0 | net=+1.769
+  matter       | tension=+0.0077 | group= 2 | net=+1.308
+  into         | tension=+0.0000 | group= 3 | net=+0.923
+  stable       | tension=-0.0049 | group= 0 | net=+1.154
+  repeating    | tension=+0.0058 | group= 6 | net=+1.923
+  patterns.    | tension=+0.0117 | group= 2 | net=+1.538
+  what         | tension=+0.0248 | group= 8 | net=+0.077
+  do           | tension=+0.0000 | group=17 | net=+0.615
+  geometric    | tension=+0.0000 | group= 6 | net=+2.615
+  structures   | tension=+0.0000 | group= 2 | net=+2.077
+  do?          | tension=+0.0000 | group=17 | net=+0.615
+
+  ── Vocabulary hits ──────────────────────────────────
+  'what'  familiarity=0.995  appearances=5 [STABLE]
+  'do'  familiarity=1.000  appearances=3 [STABLE]
+  'geometric'  familiarity=1.000  appearances=2 [STABLE]
+  'structures'  familiarity=1.000  appearances=2 [STABLE]
+  'do?'  familiarity=1.000  appearances=2 [STABLE]
+
+  ── Answer (recognition) ──────────────────────────
+  Field resolved (affirmative). Direction: positive. Persistence 1.00, consensus +0.377.
+
+  ── Geometric Output (⟳ parity locked) ──────────────
+  geometric to structures and repeating?
+  [polarity -0.006 | region boundary [-3.0,3.0] | candidates: geometric, structures, repeating, organize]
+
+  carry: +0.7383 | alignment: +1.0000 (aligned) | injected: +0.1082
+
+  consensus=+0.3775  persistence=1.0000  resolution=0.924  vocab=55 words  (17 stable, 55 named)  elapsed=0.022s
